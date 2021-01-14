@@ -1,0 +1,41 @@
+# URLS for newsboat
+"query:Unread Articles:unread = \"yes\""
+https://www.romanzolotarev.com/rss.xml
+https://fharrell.com/post/index.xml "Statistics" "Medicine"
+https://sanctum.geek.nz/arabesque/feed/ "Tech" "Programming General"
+https://treyhunner.com/atom.xml "Python"
+https://inconsolation.wordpress.com/feed/ "Tech" "Command Line"
+https://olgabotvinnik.com/index.xml "Tech" "Biology"
+https://zachholman.com/atom "Tech"
+http://www.calnewport.com/blog/feed/ "Productivity" "Minimalism"
+http://www.fast.ai/atom.xml "ML"
+http://machinelearningmastery.com/blog/feed "ML"
+https://distill.pub/rss.xml "ML"
+https://erikbern.com/atom.xml "ML" "Tech"
+https://texblog.org/feed/ "TeX"
+http://aiweirdness.com/rss "ML"
+https://medium.com/feed/@williamkoehrsen "ML"
+https://medium.com/feed/@shiutangli "ML"
+https://medium.com/feed/@dipanzan.sarkar "ML"
+https://medium.com/feed/@citynorman "ML"
+https://lukeoakdenrayner.wordpress.com/feed/ "ML" "Medicine"
+https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1DoqKB8O4L1HKJ03CSM3_u9Nso2Mh3EAW0p2xKsNDP4weQmg5- "ML" "Medicine" # Isaac Kohane
+https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1h3SAs98aPqmd6Vfxn_uiAWup_3lYctL4aAFP-Y7Eg8Pn6DEFA "ML" "Medicine" # Andrew Beam
+https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1LYeLHGBis0h-Lsf3JolAU4vKQfag0FIfccYEuHHw588IEaouQ "ML" "Medicine" # Luke Oakden-Rayner
+https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1z_pxc-9fhPUGO3O_yTKHOiZnSIaAVzVxhd2tmq3tMYy6gxEhK "ML" "Medicine" # Scott Lundberg
+http://xpenguin.club/rss.xml "Tech"
+https://davebucklin.com/feed.xml "Tech" "Gopher"
+http://feeds.feedburner.com/MrMoneyMustache "Finance"
+# https://www.jpsmjournal.com/current.rss "Medicine" "Palliative Care"
+https://beauhilton.com/rss.xml
+https://standardebooks.org/rss/new-releases "Literature"
+https://emptysqua.re/blog/index.xml "Tech" "Programming" "Buddhism"
+https://jvns.ca/atom.xml "Tech" "Teaching"
+https://tastetesterdoc.com/feed "Medicine" "Friends"
+https://statmodeling.stat.columbia.edu/feed/ "Stats" "Causal Inference"
+https://webgefrickel.de/blog/feed "Tech"
+https://www.rosipov.com/atom.xml "Tech"
+http://www.spoon-tamago.com/feed/ "Culture" "Japan"
+http://www.thesheriffofsodium.com/feed/ "medical education"
+https://lukesmith.xyz/rss.xml "Tech"
+# mutt gmail kjdfpopyuilrhqpe
