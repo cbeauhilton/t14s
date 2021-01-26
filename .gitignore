@@ -2,6 +2,10 @@
 *.*history
 *.log
 *.sqlite
+Code/
+GIMP/
+Thunar/
+VirtualBox/
 calcurse/.*
 calcurse/.calcurse.pid
 calcurse/apts
@@ -10,9 +14,8 @@ calcurse/notes/
 calcurse/todo
 chromium/
 coc/
-Code/
+dconf/
 gcloud/
-GIMP/
 gnupg/
 menus/
 mpd/database
@@ -28,9 +31,8 @@ pam/pam_gnupg
 pulse/
 spicetify/
 spotify/
-Thunar/
 transmission/
-VirtualBox/
 xfce4/xfconf/xfce-perchannel-xml/*
-zsh/.zinit/bin
-zsh/.zinit/plugins/
+zsh/.zcompdump
+zsh/.zinit/
+QtProject.conf

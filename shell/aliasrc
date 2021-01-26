@@ -10,7 +10,7 @@ alias \
 	rm="rm -vI" \
 	mkd="mkdir -pv" \
 	yt="youtube-dl --add-metadata -i" \
-	yta="yt -x -f bestaudio/best --audio-format mp3" \
+	yta="yt -x -f bestaudio/best --audio-format mp3 --restrict-filenames --xattrs --embed-thumbnail" \
 	ffmpeg="ffmpeg -hide_banner"
 
 # Colorize commands when possible.
@@ -27,7 +27,7 @@ alias \
 	trem="transmission-remote" \
 	YT="youtube-viewer" \
 	sdn="sudo shutdown -h now" \
-	f="$FILE" \
+	f="rga-fzf" \
 	e="$EDITOR" \
 	v="$EDITOR" \
 	p="sudo pacman" \

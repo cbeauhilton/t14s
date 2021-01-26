@@ -28,6 +28,7 @@ call plug#begin('~/.config/nvim/plugged')
 
     " theming
     syntax on
+    set redrawtime=10000
     if (has("termguicolors"))
         set termguicolors
     endif

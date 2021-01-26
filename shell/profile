@@ -42,7 +42,12 @@ export WEECHAT_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/weechat"
 export CONDARC="${XDG_CONFIG_HOME:-$HOME/.config}/conda/.condarc"
 export IPYTHONDIR="${XDG_CONFIG_HOME:-$HOME/.config}/jupyter"
 export JUPYTER_CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/jupyter"
-export R_ENVIRON_USER="${XDG_CONFIG_HOME:-$HOME/.config}/R/Renviron"
+
+export R_LIBS_USER="${XDG_DATA_HOME:-$HOME/.local/share}/R/%p-library/%v"
+export R_LIBS_USER="$(Rscript -e 'cat(Sys.getenv("R_LIBS_USER"))')"
+mkdir -p "$R_LIBS_USER"
+export R_PROFILE_USER="${XDG_CONFIG_HOME:-$HOME/.config}/R/rprofile"
+export R_ENVIRON_USER="${XDG_CONFIG_HOME:-$HOME/.config}/R/renviron"
 
 # Other program settings:
 export DICS="/usr/share/stardict/dic/"
@@ -143,16 +148,6 @@ ex=🎯:\
 "
 
 [ ! -f ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ] && shortcuts >/dev/null 2>&1 &
-
-if pacman -Qs libxft-bgra >/dev/null 2>&1; then
-	# Start graphical server on user's current tty if not already running.
-	[ "$(tty)" = "/dev/tty1" ] && ! pidof -s Xorg >/dev/null 2>&1 && exec startx
-else
-	echo "\033[31mIMPORTANT\033[0m: Note that \033[32m\`libxft-bgra\`\033[0m must be installed for this build of dwm.
-Please run:
-	\033[32myay -S libxft-bgra-git\033[0m
-and replace \`libxft\`. Afterwards, you may start the graphical server by running \`startx\`."
-fi
 
 # Switch escape and caps if tty and no passwd required:
 sudo -n loadkeys ${XDG_DATA_HOME:-$HOME/.local/share}/larbs/ttymaps.kmap 2>/dev/null

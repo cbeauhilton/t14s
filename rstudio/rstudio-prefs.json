@@ -1,0 +1,9 @@
+{
+    "initial_working_directory": "~/.local/share/R/x86_64-pc-linux-gnu-library/4.0",
+    "pdf_previewer": "none",
+    "posix_terminal_shell": "bash",
+    "show_hidden_files": true,
+    "editor_theme": "Merbivore Soft",
+    "save_files_before_build": true,
+    "editor_keybindings": "vim"
+}
