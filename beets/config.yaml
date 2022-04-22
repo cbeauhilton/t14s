@@ -1,0 +1,14 @@
+directory: ~/tunes
+library: ~/.config/beets/library.db
+plugins: [chroma, embedart, lyrics, fetchart, mbsync]
+chroma:
+  auto: yes
+import:
+  write: yes
+  incremental: yes
+  resume: yes
+  log: ~/.config/beets/log
+musicbrainz:
+  genres: yes
+ui:
+  color: yes

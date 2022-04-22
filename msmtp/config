@@ -1,0 +1,11 @@
+account cbeauhilton@gmail.com
+host smtp.gmail.com
+port 587
+from cbeauhilton@gmail.com
+user cbeauhilton@gmail.com
+passwordeval "pass cbeauhilton@gmail.com"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/beau/.config/msmtp/msmtp.log
+
