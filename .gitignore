@@ -37,6 +37,7 @@ mpd/state
 mpd/sticker.sql
 ncmpcpp/ncmpcpp-ueberzug
 nnn/
+nvim/
 nvim/plugged/
 nvim-bak/plugged/
 obsidian/
