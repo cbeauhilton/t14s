@@ -140,6 +140,7 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- Additional Plugins
 lvim.plugins = {
     {"jalvesaq/Nvim-R"},
+    {"jalvesaq/zotcite"},
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
