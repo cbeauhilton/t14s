@@ -1,13 +1,12 @@
 #!/bin/sh
 
-# mpd &			                        # music player daemon - now starting from systemd
-remaps &		                      # remaps script, switching caps/esc and more
-file-inotify /tmp/keyboard.lock remaps &  # Triggered by udev rule
-setbg &			                      # set the background
-picom &			                      # compositor (transparency and other goodies)
-slstatus &                        # less sucky status bar
-dunst &			                      # notifications
-xset r rate 300 50 &	            # speed xrate up
-gnome-keyring-daemon --start &    # passwords
-export SSH_AUTH_SOCK &            # ssh
-unclutter &		                    # remove mouse when idle
+remaps &		                              # remaps script, switching caps/esc and more
+file-inotify /tmp/keyboard.lock remaps &  # triggered by udev rule
+setbg &                                   # set the background
+picom &                                   # compositor (transparency and other goodies)
+unclutter &                               # remove mouse when idle
+slstatus &                                # less sucky status bar
+dunst &                                   # notifications
+xset r rate 300 50 &                      # speed xrate up
+gnome-keyring-daemon --start &            # passwords
+export SSH_AUTH_SOCK &                    # ssh
