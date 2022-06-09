@@ -85,14 +85,12 @@ source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/lficons"
 # API keys, etc
 source "${XDG_SECRETS_HOME:-$HOME/.local/secrets}/secrets.sh"
 
-[ ! -f ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ] && shortcuts >/dev/null 2>&1 &
-
-# Switch escape and caps if tty and no passwd required:
+# switch escape and caps if tty and no passwd required:
 sudo -n loadkeys ${XDG_DATA_HOME:-$HOME/.local/share}/larbs/ttymaps.kmap 2>/dev/null
 
-
+# load atuin and restore original up binding: https://til.simonwillison.net/macos/atuin
 eval "$(atuin init zsh)"
-# Restore original up binding: https://til.simonwillison.net/macos/atuin
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
+
