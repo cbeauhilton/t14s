@@ -20,6 +20,7 @@ alias \
 alias \
 	ka="killall" \
 	g="git" \
+	gg="git pull" \
   gcm="git commit -am"\
   cdt="$TERMINAL &>/dev/null & disown" \
 	f="rga-fzf" \
