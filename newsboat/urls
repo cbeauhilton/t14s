@@ -8,7 +8,6 @@ https://inconsolation.wordpress.com/feed/ "Tech" "Command Line"
 https://olgabotvinnik.com/index.xml "Tech" "Biology"
 https://zachholman.com/atom "Tech"
 http://www.calnewport.com/blog/feed/ "Productivity" "Minimalism"
-http://www.fast.ai/atom.xml "ML"
 https://erikbern.com/atom.xml "ML" "Tech"
 http://aiweirdness.com/rss "ML"
 https://lukeoakdenrayner.wordpress.com/feed/ "ML" "medicine"
@@ -16,17 +15,12 @@ https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1DoqKB8O4L1HKJ03
 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1h3SAs98aPqmd6Vfxn_uiAWup_3lYctL4aAFP-Y7Eg8Pn6DEFA "ML" "medicine" # Andrew Beam
 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1LYeLHGBis0h-Lsf3JolAU4vKQfag0FIfccYEuHHw588IEaouQ "ML" "medicine" # Luke Oakden-Rayner
 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1z_pxc-9fhPUGO3O_yTKHOiZnSIaAVzVxhd2tmq3tMYy6gxEhK "ML" "medicine" # Scott Lundberg
-http://xpenguin.club/rss.xml "Tech"
 https://davebucklin.com/feed.xml "Tech" "Gopher"
 https://beauhilton.com/feed.xml
-https://standardebooks.org/rss/new-releases "Literature"
 https://emptysqua.re/blog/index.xml "Tech" "Programming" "Buddhism"
 https://jvns.ca/atom.xml "Tech" "Teaching"
 https://statmodeling.stat.columbia.edu/feed/ "Stats" "Causal Inference"
-https://webgefrickel.de/blog/feed "Tech"
 https://www.rosipov.com/atom.xml "Tech"
-http://www.thesheriffofsodium.com/feed/ "medical education"
-# mutt gmail kjdfpopyuilrhqpe
-https://rgoswami.me/posts/index.xml
 https://onesearch-rss.nejm.org/api/specialty/rss?context=nejm&specialty=hematology-oncology "oncology"
 https://creativesamba.substack.com/feed "marketing"
+# mutt gmail kjdfpopyuilrhqpe
