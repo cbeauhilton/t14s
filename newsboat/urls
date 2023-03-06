@@ -1,26 +1,5 @@
 # URLS for newsboat
 "query:Unread Articles:unread = \"yes\""
-https://www.romanzolotarev.com/rss.xml
-https://fharrell.com/post/index.xml "Statistics" "medicine"
-https://sanctum.geek.nz/arabesque/feed/ "Tech" "programming"
-https://treyhunner.com/atom.xml "Python"
-https://inconsolation.wordpress.com/feed/ "Tech" "Command Line"
-https://olgabotvinnik.com/index.xml "Tech" "Biology"
-https://zachholman.com/atom "Tech"
-http://www.calnewport.com/blog/feed/ "Productivity" "Minimalism"
-https://erikbern.com/atom.xml "ML" "Tech"
-http://aiweirdness.com/rss "ML"
-https://lukeoakdenrayner.wordpress.com/feed/ "ML" "medicine"
 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1DoqKB8O4L1HKJ03CSM3_u9Nso2Mh3EAW0p2xKsNDP4weQmg5- "ML" "medicine" # Isaac Kohane
 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1h3SAs98aPqmd6Vfxn_uiAWup_3lYctL4aAFP-Y7Eg8Pn6DEFA "ML" "medicine" # Andrew Beam
 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1LYeLHGBis0h-Lsf3JolAU4vKQfag0FIfccYEuHHw588IEaouQ "ML" "medicine" # Luke Oakden-Rayner
-https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1z_pxc-9fhPUGO3O_yTKHOiZnSIaAVzVxhd2tmq3tMYy6gxEhK "ML" "medicine" # Scott Lundberg
-https://davebucklin.com/feed.xml "Tech" "Gopher"
-https://beauhilton.com/feed.xml
-https://emptysqua.re/blog/index.xml "Tech" "Programming" "Buddhism"
-https://jvns.ca/atom.xml "Tech" "Teaching"
-https://statmodeling.stat.columbia.edu/feed/ "Stats" "Causal Inference"
-https://www.rosipov.com/atom.xml "Tech"
-https://onesearch-rss.nejm.org/api/specialty/rss?context=nejm&specialty=hematology-oncology "oncology"
-https://creativesamba.substack.com/feed "marketing"
-# mutt gmail kjdfpopyuilrhqpe
