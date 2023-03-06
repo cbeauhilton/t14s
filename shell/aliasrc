@@ -15,13 +15,15 @@ alias \
 	ls="ls -hN --color=auto --group-directories-first" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
-	ccat="highlight --out-format=ansi"
+	ccat="highlight --out-format=ansi" \
+  mbsync=mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc
 
 alias \
 	ka="killall" \
 	g="git" \
 	gg="git pull" \
   gcm="git commit -am"\
+  glazy="git add . && git commit -m 'update' && git push"\
   cdt="$TERMINAL &>/dev/null & disown" \
 	f="rga-fzf" \
   kt="kitty & disown" \

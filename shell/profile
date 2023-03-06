@@ -1,6 +1,5 @@
 #!/bin/zsh
 
-# Adds `~/.local/bin` to $PATH
 export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
 
 unsetopt PROMPT_SP
@@ -9,9 +8,9 @@ setopt share_history
 # Default programs:
 export EDITOR="lvim"
 export TERMINAL="kitty"
-export BROWSER="google-chrome-stable"
+export BROWSER="vivaldi-stable"
 
-# ~/ Clean-up:
+export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_SECRETS_HOME="$HOME/.local/secrets"
@@ -24,7 +23,6 @@ export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
 export INPUTRC="${XDG_CONFIG_HOME:-$HOME/.config}/shell/inputrc"
 export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
 export WINEPREFIX="${XDG_DATA_HOME:-$HOME/.local/share}/wineprefixes/default"
-export KODI_DATA="${XDG_DATA_HOME:-$HOME/.local/share}/kodi"
 export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/password-store"
 export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
 export ANDROID_SDK_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/android"
@@ -37,7 +35,6 @@ export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
 export WEECHAT_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/weechat"
 export CALIBRE_USE_SYSTEM_THEME=0
 export CALIBRE_USE_DARK_PALETTE=1
-export CHROME_FLAGS="--force-dark-mode --enable-features=WebUIDarkMode"
 export CONDARC="${XDG_CONFIG_HOME:-$HOME/.config}/conda/.condarc"
 export IPYTHONDIR="${XDG_CONFIG_HOME:-$HOME/.config}/jupyter"
 export JUPYTER_CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/jupyter"
@@ -50,13 +47,19 @@ export R_HISTFILE="${XDG_CONFIG_HOME:-$HOME/.config}/R/hist.Rhistory"
 export R_LIBS_USER="${XDG_DATA_HOME:-$HOME/.local/share}/R/%p-library/%v"
 export R_LIBS_USER="$(Rscript -e 'cat(Sys.getenv("R_LIBS_USER"))')"
 mkdir -p "$R_LIBS_USER"
-#export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+# export WORKON_HOME="$XDG_DATA_HOME/virtualenvs"
+export AUTOSWITCH_VIRTUAL_ENV_DIR="$XDG_DATA_HOME/virtualenvs"
+export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 
 export npm_config_prefix="$HOME/.local"
 export PATH="$PATH:$GEM_HOME/bin"
 export PATH="$PATH:$CARGO_HOME/bin"
 export PATH="$PATH:$HOME/src/zk/bin"
+export PATH=$GOPATH/bin:$PATH
 export ZK_PATH="$HOME/dox/zk"
+export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
+[[ ! -r "${XDG_DATA_HOME:-$HOME/.local/share}/opam/opam-init/init.zsh" ]] || source "${XDG_DATA_HOME:-$HOME/.local/share}/opam/opam-init/init.zsh" > /dev/null 2> /dev/null
 
 export DICS="/usr/share/stardict/dic/"
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
@@ -79,12 +82,12 @@ export _JAVA_AWT_WM_NONREPARENTING=1	# fix for Java applications in dwm
 source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/lficons"
 source "${XDG_SECRETS_HOME:-$HOME/.local/secrets}/secrets.sh"
 
-# switch escape and caps if tty and no passwd required:
-sudo -n loadkeys ${XDG_DATA_HOME:-$HOME/.local/share}/larbs/ttymaps.kmap 2>/dev/null
-
 # load atuin and restore original up binding: https://til.simonwillison.net/macos/atuin
 eval "$(atuin init zsh)"
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
+
+# switch escape and caps if tty and no passwd required:
+sudo -n loadkeys ${XDG_DATA_HOME:-$HOME/.local/share}/larbs/ttymaps.kmap 2>/dev/null
 

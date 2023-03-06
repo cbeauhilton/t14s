@@ -1,0 +1,7 @@
+[user]
+	email = cbeauhilton@gmail.com
+	name = Beau
+[credential]
+	helper = cache
+[init]
+	defaultbranch = main

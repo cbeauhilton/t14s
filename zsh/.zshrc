@@ -19,7 +19,7 @@ bindkey "^R" history-incremental-search-backward
 fpath+=~/.config/zsh/.zfunc
 
 # Basic auto/tab complete:
-autoload -U compinit
+autoload -Uz compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
@@ -100,6 +100,7 @@ if [[ ! -f $HOME/.config/zsh/.zinit/bin/zinit.zsh ]]; then
         print -P "%F{160}▓▒░ The clone has failed.%f%b"
 fi
 
+
 source "$HOME/.config/zsh/.zinit/bin/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
@@ -115,3 +116,11 @@ zinit light-mode for \
     zinit-zsh/z-a-bin-gem-node
 
 ### End of Zinit's installer chunk
+
+# pnpm
+export PNPM_HOME="/home/beau/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+# opam configuration
+[[ ! -r /home/beau/.local/share/opam/opam-init/init.zsh ]] || source /home/beau/.local/share/opam/opam-init/init.zsh  > /dev/null 2> /dev/null

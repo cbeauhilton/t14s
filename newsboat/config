@@ -1,7 +1,8 @@
-#show-read-feeds no
+show-read-feeds no
 auto-reload yes
 datetime-format "%d %b %Y"
 external-url-viewer "urlscan -dc -r 'linkhandler {}'"
+
 
 bind-key j down
 bind-key k up

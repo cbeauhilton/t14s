@@ -6,6 +6,7 @@
 *.spl
 *.sqlite
 .netrwhist
+Bitwarden/
 Code/
 GIMP/
 Microsoft/

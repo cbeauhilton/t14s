@@ -1,0 +1,26 @@
+
+IMAPStore cbeauhilton@gmail.com-remote
+Host imap.gmail.com
+Port 993
+User cbeauhilton@gmail.com
+PassCmd "pass cbeauhilton@gmail.com"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore cbeauhilton@gmail.com-local
+Subfolders Verbatim
+Path /home/beau/.local/share/mail/cbeauhilton@gmail.com/
+Inbox /home/beau/.local/share/mail/cbeauhilton@gmail.com/INBOX
+
+Channel cbeauhilton@gmail.com
+Expunge Both
+Master :cbeauhilton@gmail.com-remote:
+Slave :cbeauhilton@gmail.com-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+

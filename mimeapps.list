@@ -19,3 +19,5 @@ x-scheme-handler/lbry=lbry.desktop
 inode/directory=file.desktop
 application/x-ica=wfica.desktop
 x-scheme-handler/msteams=teams.desktop
+x-scheme-handler/http=browser.desktop
+x-scheme-handler/https=browser.desktop
