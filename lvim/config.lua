@@ -24,7 +24,10 @@ lvim.builtin.treesitter.auto_install = true
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup {
     { command = "eslint" },
-    { command = "flake8" },
+    {
+        command = "flake8",
+        args = { "--max-line-length", "99" }
+    },
 }
 
 local formatters = require "lvim.lsp.null-ls.formatters"

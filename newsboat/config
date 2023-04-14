@@ -45,4 +45,4 @@ freshrss-url "http://100.107.9.20:81/api/greader.php" # this is the real url - s
 freshrss-login "beau"
 freshrss-password "password" # this is the real password, for user login and API access - FreshRSS is behind a tailnet, access and auth are handled by Tailscale
 freshrss-flag-star "s"
-freshrss-min-items 100
+freshrss-min-items 10000
